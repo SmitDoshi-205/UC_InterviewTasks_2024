@@ -1,0 +1,807 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+}
+/* page-1 */
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-top: 36px;
+    margin-right: 180px;
+    z-index: 1;
+}
+
+.left-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    mix-blend-mode: multiply;
+}
+
+.logo-name {
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.middle-section {
+    margin-left: 25px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+#navbar ul li {
+    list-style-type: none;
+}
+
+#navbar ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 7px 12px;
+    transition: all 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#navbar ul li a:hover {
+    font-weight: bold;
+}
+
+.book-a-table {
+    background-color: rgba(234, 109, 39, 1);
+    color: white;
+    border: none;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+    width: 135px;
+    height: 55px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.book-a-table:hover {
+    opacity: 0.8;
+}
+
+/* introduction-section */
+#introduction::before {
+    content: "";
+    background: url('https://cdn.shopify.com/s/files/1/0101/7328/4430/files/Fucus_vesiculosus-N._Kirchhoff_credit_600x600.jpg?v=1636662353') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    left: 54%;
+    top: 56%;
+    transform: rotate(48deg);
+    opacity: 0.3;
+    z-index: -2;
+    width: 45%;
+    height: 45%;
+}
+#introduction {
+    margin-top: 15px;
+}
+#introduction::after {
+    content: "";
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsD37F3NLVaSMb9DJa7MbWsa1FX5CaWeqpUw&s') no-repeat center center;
+    position: absolute;
+    top: 15%;
+    transform: rotate(-18deg);
+    z-index: -1;
+    opacity: 0.3;
+    width: 30%;
+    height: 30%;
+}
+h1 {
+    position: absolute;
+    top: 200px;
+    left: 280px;
+    font-family: "David Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 72px;
+}
+
+.ambience {
+    position: absolute;
+    right: 400px;
+    top: 190px;
+    width: 600pxpx;
+    height: 600px;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.food-1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 520px;
+    right: 650px;
+}
+
+.description {
+    font-size: 12px;
+    color: rgba(92, 101, 116, 1);
+    width: 17%;
+    line-height: 29px;
+    position: absolute;
+    top: 400px;
+    left: 280px;
+}
+
+.intro-buttons {
+    position: absolute;
+    top: 510px;
+    left: 280px;
+}
+
+.menu {
+    background-color: rgba(16, 26, 36, 1);
+    color: white;
+    font-family: "David Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 90px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.book-a-table2 {
+    font-family: "David Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(234, 109, 39, 1);
+    color: white;
+    border: none;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu:hover,
+.book-a-table2:hover {
+    opacity: 0.8;
+}
+
+.social-media {
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 640px;
+    left: 280px;
+}
+
+.social-media button {
+    background-color: white;
+    border: 0.85px solid black;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.social-media img {
+    width: 22px;
+    height: 22px;
+}
+
+.social-media button:hover {
+    opacity: 0.45;
+}
+
+/* special-dishes-section */
+#dishes::before {
+    content: "";
+    background-color: gray;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    width: 100%;
+    height: 180%;
+}
+
+#dishes {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 850px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 55px;
+    font-family: "David Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.dishes-description {
+    position: absolute;
+    top: 18%;
+    left: 620px;
+    width: 18.5%;
+    color: rgba(92, 101, 116, 1);
+    font-size: 13.2px;
+    line-height: 19px;
+}
+
+.food-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 16%;
+    left: 14.5%;
+    right: 15%;
+    z-index: 1;
+}
+
+.food-image img {
+    width: 18%;
+    cursor: pointer;
+    white-space-collapse: nowrap;
+    transition: all;
+}
+
+.food-image img:hover {
+    transform: scale(1.3);
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 18%;
+    left: 27%;
+}
+
+.cost button {
+    background-color: rgba(16, 26, 36, 1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-right: 250px;
+    height: 45px;
+    width: 45px;
+    z-index: 2;
+}
+
+.food-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 15%;
+    z-index: 0;
+}
+
+.food-items div {
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 25px;
+    border-top-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.food-items div:hover {
+    background-color: white;
+}
+
+.name {
+    font-family: "David Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 135px;
+}
+
+.about-dish {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgba(92, 101, 116, 1);
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    width: 75%;
+}
+
+.container-food {
+    position: absolute;
+    top: 75%;
+    left: 4%;
+    width: 38%;
+}
+
+.leaf-1,
+.leaf-2 {
+    width: 16%;
+    position: absolute;
+}
+
+.leaf-1 {
+    top: 88%;
+    left: 35%;
+}
+
+.leaf-2 {
+    top: 138%;
+    left: 10.3%;
+}
+
+.leaf-3 {
+    width: 7%;
+    position: absolute;
+    top: 95%;
+    left: 2%;
+}
+
+.welcome {
+    position: absolute;
+    top: 98%;
+    left: 56.5%;
+}
+
+.welcome h3 {
+    font-family: "David Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+}
+
+.welcome p {
+    margin-top: 30px;
+    color: rgba(92, 101, 116, 1);
+    font-size: 13px;
+    line-height: 25px;
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+/* promo-code-section */
+#promo-code {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 294%;
+    width: 100%;
+    height: 60%;
+}
+.promo::before {
+    content: "";
+    background: url('https://falstaff.b-cdn.net/core/5812042/die-10-besten-restaurants-der-kategorie-modern-in-zuerich_5812042.jpg') no-repeat center center/cover;
+    filter: brightness(50%);
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+    width: 95%;
+    height: 100%;
+    border-radius: 30px;
+}
+.promo{
+    position: absolute;
+    height: 65%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.promo-heading {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-family: "David Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 42px;
+    color: white;
+}
+.email-bar{
+    width: 580px;
+    height: 65px;
+    border: none;
+    border-radius: 10px;
+}
+input.email-bar {
+    font-size: 18px;
+    padding-left: 10px;
+}
+.email-bar::placeholder {
+    padding: 10px 25px;
+}
+#promo-code button {
+    background-color: rgba(234, 109, 39, 1);
+    color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 45px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 204px;
+    right: 275px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#promo-code button:hover {
+    opacity: 0.85;
+}
+
+/* footer-section */
+footer::before {
+    content: "";
+    background: url('https://thumbs.dreamstime.com/b/asian-ramen-noodle-soup-chopsticks-raster-bowl-accompanied-various-seasonings-sketch-engraving-generative-ai-313098624.jpg') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+footer{
+    position: relative;
+    top: 2500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 45px;
+    padding-bottom: 100px;
+} 
+.container-1 {
+    margin-left: 100px;
+    width: 500px;
+    position: relative;
+}
+.know-more ,
+.know-more a ,
+.timings {
+    color: rgba(92, 101, 116, 1);
+    font-size: 14px;
+    line-height: 22px;
+}
+.know-more{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    width: 70%;
+}
+h5{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.timings{
+    display: flex;
+    align-items: center;
+}
+.timings p{
+    margin-right: 35px;
+}
+.container-2 h5,
+.container-3 h5,
+.container-4 h5 {
+    text-align: left;
+    margin-bottom: 18px;
+}
+.container-2 ol li,
+.container-3 ol li {
+    list-style-type: none;
+    color: rgba(92, 101, 116, 1);
+    font-size: 14px;
+    line-height: 42px;
+}
+.container-2 ol li a,
+.container-3 ol li a {
+    text-decoration: none;
+    color: rgba(92, 101, 116, 1);
+}
+.container-4 {
+    height: 220px;
+    width: 250px;
+}
+.container-4 div{
+    margin-top: 30px;
+    top: 12%;
+    left: 80%;
+}
+.container-4 div button{
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+/* page-2 */
+/* about-us-section */
+#about-us::before{
+    content: "";
+    background: url('https://img.freepik.com/premium-vector/chefs-hat-logo-sketch-hand-drawn-doodle-style-vector-illustration-design_892631-2168.jpg') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 2%;
+    left: -8%;
+    transform: rotate(-25deg);
+    z-index: -1;
+    width: 30%;
+    height: 30%;
+    opacity: 0.2;
+}
+#about-us {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.lorem{
+    color: rgba(92, 101, 116, 1);
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+    width: 37%;   
+}
+.chef-head{
+    position: absolute;
+    top: 18%;
+    left: 7%;
+}
+.box{
+    display: flex;
+    margin-left: 130px;
+}
+.quality{
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+.quality img{
+    width: 8%;
+}
+.quality p{
+    color: rgba(92, 101, 116, 1);
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.buttons{
+    display: flex;
+    position: absolute;
+    top: 78%;
+    margin-left: 160px;
+}
+/* page-3 */
+/* reviews-section */
+#reviews::before{
+    content: "";
+    background: url('https://media.istockphoto.com/id/1155908527/vector/serving.jpg?s=612x612&w=0&k=20&c=6A1gF6Rt9b3OeCATeCa9liIURLhG2iFJbaRWuGoDNL0=') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.1;
+}
+#reviews{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.review {
+    text-align: center;
+    color: rgba(92, 101, 116, 1);
+    font-size: 16px;
+    line-height: 20px;
+    width: 22%;
+    margin-top: 30px;
+}
+.customer {
+    margin-top: 25px;
+    width: 50px;
+    border-radius: 28px;
+    z-index: 1;
+}
+.star {
+    margin-top: 10px;
+    width: 150px;
+    mix-blend-mode: multiply;
+}
+.review-1::before {
+    content: "";
+    background-color: rgba(241, 241, 241, 1);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    z-index: -1;
+    width: 25%;
+    height: 31%;
+    opacity: 0.8;
+}
+.review-1{
+    border-style: double;
+    border-color: balck;
+    border-top-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    margin-top: -14px;
+    padding-bottom: 20px;
+    z-index: 0;
+}
+.comment {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(92, 101, 116, 1);
+    line-height: 20px;
+    width: 78%;
+    margin-top: 10px;
+}
+.customer-name{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.designation{
+    margin-top: 5px;
+    color: rgba(92, 101, 116, 1);
+    font-size: 12px;
+}
+/* page-4 */
+/* contact-section */
+#contact{
+    position: relative;
+}
+.priority{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 250px;
+    text-align: center;
+    background-color: rgba(234, 109, 39, 0.9);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 60px;
+    left: 10%;
+}
+.percent{
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: bold;
+}
+.preference{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+#contact h1{
+    top: 340px;
+    left: 10%;
+}
+#contact button {
+    background-color: rgba(234, 109, 39, 1);
+    color: white;
+    border: none;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 440px;
+    left: 10%;
+    width: 135px;
+    height: 55px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#contact button:hover {
+    opacity: 0.8;
+}
+.details{
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.symbol{
+    height: 460px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0%;
+}
+.symbol img{
+    width: 50px;
+    border-radius: 60px;
+}
+.write-up{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    margin-left: 50px;
+}
+.write-up div{
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+.write-up p{
+    color: rgba(92, 101, 116, 1);
+}
+.write-up p,
+.write-up h3{
+    margin-bottom: 20px;
+    line-height: 30px;
+    width: 100%;
+}
+.write-up a{
+    text-decoration: none;
+    color: rgba(92, 101, 116, 1);
+}

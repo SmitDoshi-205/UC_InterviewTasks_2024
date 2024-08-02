@@ -1,0 +1,27 @@
+.items{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.item-table{
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.item-image{
+    height: 64px;
+    border-collapse: collapse;
+}
+.item-name{
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration-line: none;
+    color: black;
+    transition: color;
+}
+.item-name:hover{
+    color: rgb(128, 107, 220);
+}

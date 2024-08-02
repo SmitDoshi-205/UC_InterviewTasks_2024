@@ -1,0 +1,12 @@
+.shopping-container{
+    background-color: rgb(211, 211, 211);
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shopping-time{
+    margin-top: 30px;
+    height: 420px;
+    width: 1380px;
+}
